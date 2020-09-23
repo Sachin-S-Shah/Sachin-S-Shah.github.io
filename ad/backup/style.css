@@ -1,0 +1,83 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+	display: table;
+	
+	background: linear-gradient(-45deg, #fdcdbe, #fcb8d2, #b6eafd, #c0fff0);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	animation: gradient 15s ease infinite;
+}
+
+p {
+	margin: 0;
+	width: -webkit-fill-available;
+	font-family: 'Epilogue', sans-serif;
+	font-size: 12px;
+	color: black;
+
+	
+    margin-block-start: 0;
+	margin-block-end: 0;
+	
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.carousel-caption {
+    padding-top: 0;
+	padding-bottom: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+		
+    display: flex;
+	align-items: center;
+
+	text-shadow: 1px 1px 3px white;
+}
+.thumbnail {
+    display: table-cell; 
+    text-align: center;
+	vertical-align: middle;
+	
+	background-color: transparent;
+    margin-bottom: 0;
+	border: none;
+	padding: 0;
+}
+
+.item {
+	text-align: center;
+	height: 52px;
+	width: 100%;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
