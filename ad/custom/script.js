@@ -43,7 +43,7 @@ function popupateMessages(){
 
     if(userAppOpenedCount>=30){
         try {
-            javascript: AndroidAd.loadNormalAd();
+            //javascript: AndroidAd.loadNormalAd();
         } catch (e) {}
         return;
     }
