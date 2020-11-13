@@ -295,11 +295,8 @@ function popupateMessages(){
     ]
 
     if(indexOfLanguage==-1){
-        
-        messages.push(thanksArray[2]);
-        messages.push(shareArray[2]);
-        //messages.push("Thanks for using MueTube :)\nPlease share the app with others");
-        //messages.push("If you are having any issues please uninstall\nand reinstall the app or contact me for help");
+        messages.push("Thanks for using MueTube :)\nPlease share the app with others");
+        messages.push("If you are having any issues please uninstall\nand reinstall the app or contact me for help");
     }
     else{
         messages.push(thanksArray[indexOfLanguage]);
