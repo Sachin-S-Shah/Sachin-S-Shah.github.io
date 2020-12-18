@@ -317,6 +317,10 @@ function popupateMessages(){
         messages.push(shareArray[indexOfLanguage]);
     }
 
+    var backupText = document.getElementById('backupText')
+    backupText.innerHTML=messages[0]
+    return
+
     var carouselInnerList = document.getElementsByClassName('carousel-inner');
     if (carouselInnerList.length > 0) {
         var carouselInner = carouselInnerList[0];
