@@ -1,3 +1,6 @@
+function pauseAd(){}
+function resumeAd(){}
+
 if (document.readyState === "complete") {
     doWork();
 }
@@ -8,6 +11,7 @@ else{
 }
 
 function doWork(){
+    console.log('adview doWork');
     addOnClickToBody()
 
     setTimeout(function () {
@@ -27,8 +31,6 @@ function openAdUrl(){
         javascript: AndroidAd.shareLink('https://play.google.com/store/apps/details?id=in.a5ach.muetubepre');
     } catch (e) {}
 }
-function pauseAd(){}
-function resumeAd(){}
 
 function addOnClickToBody(){
     document.getElementsByTagName('body')[0].setAttribute('onclick', 'openAdUrl();');
@@ -42,6 +44,7 @@ var userAppOpenedCount = 0;
 
 
 function popupateMessages(){
+    console.log('adview popupateMessages');
 
     if(userAppOpenedCount>=30){
         try {
