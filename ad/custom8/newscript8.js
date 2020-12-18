@@ -55,30 +55,10 @@ function popupateMessages(){
     console.log('adview hideShimmerShowCustomAd');
     
     console.log('adview backupText 1');
-    if(userAppOpenedCount>=30){
-        try {
-            //javascript: AndroidAd.loadNormalAd();
-        } catch (e) {}
-        return;
-    }
+    
     console.log('adview backupText 111');
-    
-    // if(userAppOpenedCount==3){
-    //     try {
-    //         javascript: AndroidAd.showCustomMessage('icbabba', 'Titicbabba', 'Mesicbabba', 'Submesicbabba', 'Noicbabba', 'Okicbabba', false);
-    //     } catch (e) {}
-    // }
-    
-
-    setTimeout(function () {
-        try {
-            //javascript: AndroidAd.hideShimmerShowCustomAd();
-        } catch (e) {}
-        
-        // try {
-        //     javascript: AndroidAd.setTheHeight(88);
-        // } catch (e) {}
-    }, 500);
+    console.log('adview backupText 111UK ' + userIso3LanguageCode.toLowerCase());
+  
 
     var messages = [];
 
