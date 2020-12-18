@@ -319,6 +319,8 @@ function popupateMessages(){
 
     var backupText = document.getElementById('backupText')
     backupText.innerHTML=messages[0]
+    console.log('adview backupText');
+    console.log('adview backupText '+ messages[0]);
     return
 
     var carouselInnerList = document.getElementsByClassName('carousel-inner');
