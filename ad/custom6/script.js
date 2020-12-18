@@ -54,13 +54,14 @@ function popupateMessages(){
 
     console.log('adview hideShimmerShowCustomAd');
     
-
+    console.log('adview backupText 1');
     if(userAppOpenedCount>=30){
         try {
             //javascript: AndroidAd.loadNormalAd();
         } catch (e) {}
         return;
     }
+    console.log('adview backupText 111');
     
     // if(userAppOpenedCount==3){
     //     try {
@@ -82,7 +83,7 @@ function popupateMessages(){
     var messages = [];
 
     var androidLanguageMapping = ['ara','aze','bul','ben','bos','cat','ces','dan','deu','ell','spa','est','fas','fin','fil','fra','hin','hrv','hun','ind','ita','heb','jpn','kat','khm','kor','lao','lit','lav','mkd','mon','mar','msa','mya','nob','nld','pan','pol','por','ron','rus','slk','slv','sqi','srp','swe','swa','tel','tha','tur','ukr','uzb','vie','zho']
-    console.log('adview backupText 1');
+    console.log('adview backupText 111111');
 
     let indexOfLanguage = androidLanguageMapping.indexOf(userIso3LanguageCode.toLowerCase());
 
@@ -322,7 +323,7 @@ function popupateMessages(){
 
     console.log('adview backupText 5');
 
-    
+
     var backupText = document.getElementById('backupText')
     backupText.innerHTML=messages[0]
     console.log('adview backupText final');
