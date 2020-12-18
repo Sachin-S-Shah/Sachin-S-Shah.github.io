@@ -27,6 +27,8 @@ function openAdUrl(){
         javascript: AndroidAd.shareLink('https://play.google.com/store/apps/details?id=in.a5ach.muetubepre');
     } catch (e) {}
 }
+function pauseAd(){}
+function resumeAd(){}
 
 function addOnClickToBody(){
     document.getElementsByTagName('body')[0].setAttribute('onclick', 'openAdUrl();');
