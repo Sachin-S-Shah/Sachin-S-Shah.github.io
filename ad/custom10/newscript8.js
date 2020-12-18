@@ -44,17 +44,30 @@ var userAppOpenedCount = 0;
 
 
 function popupateMessages(){
+
+    console.log('adview popupateMessages');
+
+
     try {
         javascript: AndroidAd.hideShimmerShowCustomAd();
     } catch (e) {}
 
+    console.log('adview hideShimmerShowCustomAd');
+    
+    console.log('adview backupText 1');
+    
+    console.log('adview backupText 111');
+    console.log('adview backupText 111UK ' + userIso3LanguageCode.toLowerCase());
+  
 
     var messages = [];
 
     var androidLanguageMapping = ['ara','aze','bul','ben','bos','cat','ces','dan','deu','ell','spa','est','fas','fin','fil','fra','hin','hrv','hun','ind','ita','heb','jpn','kat','khm','kor','lao','lit','lav','mkd','mon','mar','msa','mya','nob','nld','pan','pol','por','ron','rus','slk','slv','sqi','srp','swe','swa','tel','tha','tur','ukr','uzb','vie','zho']
+    console.log('adview backupText 111111');
 
     let indexOfLanguage = androidLanguageMapping.indexOf(userIso3LanguageCode.toLowerCase());
 
+    console.log('adview backupText 2');
     var thanksArray = [
         "شكرًا لاستخدام MueTube :)\nيرجى مشاركة التطبيق مع الآخرين",
 
@@ -166,6 +179,7 @@ function popupateMessages(){
 
     ]
 
+    console.log('adview backupText 3');
     var shareArray = [
         "إذا كنت تواجه أي مشاكل ، فيرجى إلغاء تثبيت\nوإعادة تثبيت التطبيق أو الاتصال بي للحصول على المساعدة",
 
@@ -276,6 +290,8 @@ function popupateMessages(){
         "如果您有任何问题，请卸载\n并重新安装该应用程序，或与我联系以获取帮助"
     ]
 
+    console.log('adview backupText 4');
+
     if(indexOfLanguage==-1){
         messages.push("Thanks for using MueTube :)\nPlease share the app with others");
         messages.push("If you are having any issues please uninstall\nand reinstall the app or contact me for help");
@@ -285,9 +301,14 @@ function popupateMessages(){
         messages.push(shareArray[indexOfLanguage]);
     }
 
+    console.log('adview backupText 5');
+
+
     var backupText = document.getElementById('backupText')
-    backupText.innerHTML=messages[0].replace('\n', '<br>')
-    return
+    //backupText.innerHTML=messages[0]
+    console.log('adview backupText final');
+    console.log('adview backupText '+ messages[0]);
+    
 
     var carouselInnerList = document.getElementsByClassName('carousel-inner');
     if (carouselInnerList.length > 0) {
