@@ -44,7 +44,16 @@ var userAppOpenedCount = 0;
 
 
 function popupateMessages(){
+
     console.log('adview popupateMessages');
+
+
+    try {
+        javascript: AndroidAd.hideShimmerShowCustomAd();
+    } catch (e) {}
+
+    console.log('adview hideShimmerShowCustomAd');
+    
 
     if(userAppOpenedCount>=30){
         try {
@@ -62,7 +71,7 @@ function popupateMessages(){
 
     setTimeout(function () {
         try {
-            javascript: AndroidAd.hideShimmerShowCustomAd();
+            //javascript: AndroidAd.hideShimmerShowCustomAd();
         } catch (e) {}
         
         // try {
