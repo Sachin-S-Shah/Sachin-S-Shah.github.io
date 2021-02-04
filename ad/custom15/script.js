@@ -728,10 +728,6 @@ function popupateMessages(){
 
         createClass('p',"font-size: 15px !important;");
         createClass('p',"font-family: Arial, sans-serif !important;");
-
-        try {
-            javascript: AndroidAd.hideShimmerShowCustomAd();
-        } catch (e) {}
     }
 
 
@@ -751,6 +747,7 @@ function popupateMessages(){
 
     //var backupText = document.getElementById('backupText')
     //backupText.innerHTML=messages[0]
+    
     
 
     var carouselInnerList = document.getElementsByClassName('carousel-inner');
@@ -773,4 +770,9 @@ function popupateMessages(){
             carouselInner.appendChild(itemDiv);
         });
     }
+
+    try {
+        console.log('asdas 5')
+        javascript: AndroidAd.hideShimmerShowCustomAd();
+    } catch (e) {}
 }
