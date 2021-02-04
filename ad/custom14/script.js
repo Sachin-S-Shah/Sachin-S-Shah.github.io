@@ -21,7 +21,7 @@ function doWork(){
         try {
             javascript: AndroidAd.loadNormalAd();
         } catch (e) {}
-    }, 60000);
+    }, 46000);
 }
 
 function openAdUrl(){

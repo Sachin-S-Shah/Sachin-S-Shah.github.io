@@ -26,7 +26,7 @@ function doWork(){
         try {
             javascript: AndroidAd.loadNormalAd();
         } catch (e) {}
-    }, 60000);
+    }, 36000);
 }
 
 function randomInteger(min, max) {
