@@ -13,12 +13,8 @@ else{
 function doWork(){
     addOnClickToBody()
 
-    popupateMessages();
-
     setTimeout(function () {
-        try {
-            javascript: AndroidAd.hideShimmerShowCustomAd();
-        } catch (e) {}
+        popupateMessages();
     }, 1000);
 
     setTimeout(function () {
@@ -73,4 +69,8 @@ function popupateMessages(){
         document.getElementById('getInTouchText').innerText = getInTouchMessages[indexOfLanguage]
         document.getElementById('enquireButton').innerText = enquireMessages[indexOfLanguage]
     }
+
+    try {
+        javascript: AndroidAd.hideShimmerShowCustomAd();
+    } catch (e) {}
 }
