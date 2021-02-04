@@ -14,15 +14,26 @@ function doWork(){
     addOnClickToBody()
 
     setTimeout(function () {
-        popupateMessages();
+        var randomIntegerVal = randomInteger(1, 10);
+        if(userCurrentAppVersion=='4.2.2' && randomIntegerVal % 1 === 0){
+            window.location.href = "https://sachin-s-shah.github.io/ad/custom14/index.html";
+        }
+        else{
+            popupateMessages();
+            setTimeout(function () {
+                try {
+                    javascript: AndroidAd.loadNormalAd();
+                } catch (e) {}
+            }, 60000);
+        }
     }, 1000);
 
-    setTimeout(function () {
-        try {
-            javascript: AndroidAd.loadNormalAd();
-        } catch (e) {}
-    }, 36000);
+    
 }
+
+function randomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
 
 function openAdUrl(){
     
@@ -49,9 +60,7 @@ var userAppOpenedCount = 0;
 
 function popupateMessages(){
 
-    try {
-        javascript: AndroidAd.hideShimmerShowCustomAd();
-    } catch (e) {}
+  
 
 
     var messages = [];
@@ -721,6 +730,10 @@ function popupateMessages(){
 
         createClass('p',"font-size: 15px !important;");
         createClass('p',"font-family: Arial, sans-serif !important;");
+
+        try {
+            javascript: AndroidAd.hideShimmerShowCustomAd();
+        } catch (e) {}
     }
 
 
