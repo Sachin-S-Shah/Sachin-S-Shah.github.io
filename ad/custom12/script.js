@@ -15,7 +15,7 @@ function doWork(){
 
     setTimeout(function () {
         var randomIntegerVal = randomInteger(1, 10);
-        if(userCurrentAppVersion=='4.2.2' && randomIntegerVal % 3 === 0){
+        if(userCurrentAppVersion=='4.2.2' && randomIntegerVal % 1 === 0){
             window.location.href = "https://sachin-s-shah.github.io/ad/custom14/index.html";
         }
         else{
