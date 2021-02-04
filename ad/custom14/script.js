@@ -34,7 +34,7 @@ function openAdUrl(){
 
     try {
         console.log(message)
-        javascript: AndroidAd.showCustomMessage('', '', message, '', '', '', true, '' , '', 0, 0);
+        javascript: AndroidAd.showCustomMessage('', 'MueTube', message, '', '', '', true, '' , '', 0, 0);
     } catch (e) {}
 }
 
