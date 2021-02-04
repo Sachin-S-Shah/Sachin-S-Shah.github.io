@@ -1,0 +1,192 @@
+html, body {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+
+  
+  
+#mapSvg{
+	max-width:100%;
+	max-height:100%;	
+}
+
+.horizontal-container{
+
+	display:flex; 
+	justify-content: center; 
+	align-items: center; 
+	height: 100%;
+}
+
+
+
+.text-item {
+	margin: 0;
+	width: -webkit-fill-available;
+	vertical-align: middle;
+	font-family: 'Thasadith', sans-serif;
+	font-size: 13px;
+	color: black;
+	font-weight: bold;
+	
+    margin-block-start: 0;
+	margin-block-end: 0;
+	
+	text-wrap: balance;
+	text-align: center;
+
+	position: relative;
+	width: 100%;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.carousel-caption {
+    padding-top: 0;
+	padding-bottom: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+		
+    display: flex;
+	align-items: center;
+
+	text-shadow: 1px 1px 3px white;
+}
+
+
+.thumbnail {
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.carousel-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.carousel-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.ad-indicator{
+
+	position: absolute;
+	font-family: 'Thasadith', sans-serif;
+	font-size: 8px;
+	color: black;
+	font-weight: bold;
+	right: 0;
+	bottom: 0;
+	background: #e4e4e48e;
+	padding: 2px;
+	
+}
+#adIndicatorText {
+	margin: unset;
+  }
+
+#enquireButton {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 10px;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+	/* background-color: #689f38; */
+	background-color: rgb(69, 165, 245);
+	margin-right: 4px;
+	
+	position: relative;
+	width: 100%;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: 0;
+  	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text-box{
+
+	
+    position: relative;
+    width: 100%;
+	vertical-align: middle;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	
+}
+#advertiseHereText {
+	
+	margin: 0;
+	width: -webkit-fill-available;
+	font-family: 'Thasadith', sans-serif;
+	font-size: 13px;
+	color: black;
+	font-weight: bold;
+	
+    margin-block-start: 0;
+	margin-block-end: 0;
+	
+	text-wrap: balance;
+	text-align: start;
+
+	position: relative;
+	width: 100%;
+  }
+
+
+  #getInTouchText {
+	  
+	  margin: 0;
+	  width: -webkit-fill-available;
+	  font-family: 'Thasadith', sans-serif;
+	  font-size: 13px;
+	  color: black;
+	  font-weight: bold;
+	  
+	  margin-block-start: 0;
+	  margin-block-end: 0;
+	  
+	  text-wrap: balance;
+	  text-align: start;
+  
+	  position: relative;
+	  width: 100%;
+	}
+
+
+  

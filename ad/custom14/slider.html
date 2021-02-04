@@ -1,0 +1,117 @@
+<html>
+  <head>
+      
+
+    <title>MueTube</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Thasadith&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </head>
+  <body>
+
+
+
+
+    <div class="horizontal-container">
+        <div style="width:0vw; height: 100%;">
+        </div>
+
+        <div style="width:100vw; height: 100%;">
+            <div class="thumbnail">
+                <div id="carousel" class="carousel-slide">
+                    <div class="carousel-inner">
+                        
+                        <div class="carousel-item">
+                            <div class="horizontal-container">    
+                                <div style="width:40vw; height: 100%;">
+                                    <img id="map-svg" src="./map.svg">
+                                </div>  
+                                <div style="width:60vw; height: 100%;">
+                                    <div class="text-box">
+                                        <p id="advertise-here-text">Put your ad here on MueTube<br>and reach 1000s across the world</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="carousel-item">
+                            <div class="horizontal-container">   
+                                <div style="width:80vw; height: 100%;">
+                                    <div class="text-box">
+                                        <p id="get-in-touch-text">Get in touch with us to<br>advertise on MueTube<br></p>
+                                    </div>
+                                </div>
+                                <div style="width:20vw; height: 100%;">
+                                    <button class="updatebutton" id="updatebutton" type="button">Enquire</button>
+                                </div> 
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="horizontal-container">    
+                                <div style="width:40vw; height: 100%;">
+                                    <img id="map-svg" src="./map.svg">
+                                </div>  
+                                <div style="width:60vw; height: 100%;">
+                                    <div class="text-box">
+                                        <p id="advertise-here-text">Put your ad here on MueTube<br>and reach 1000s across the world</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div style="width:0vw; height: 100%;">
+        </div>
+
+      </div>
+
+      <div class="ad-indicator">
+        <p id="ad-indicator-text">Ad</p>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+  <script src="./script.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel-inner').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000
+      });
+    });
+  </script>
+
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MueTube</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Thasadith&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+
+    <div class="horizontal-container">
+        <div style="width:0vw; height: 100%;">
+        </div>
+        <div style="width:100vw; height: 100%;">
+            <div id="carousel" class="carousel slide" data-interval="10000" data-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-interval="10000" >
+                        <div class="horizontal-container" style="padding:4px;">    
+                            <div style="width:40vw; height: 100%;">
+                                <img id="mapSvg" src="./map.svg">
+                            </div>  
+                            <div style="width:60vw; height: 100%;">
+                                <div class="text-box">
+                                    <p id="advertiseHereText">Put your ad here on MueTube and reach 1000s across the world</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-interval="8000" >
+                        <div class="horizontal-container" style="padding:4px;">   
+                            <div style="width:70vw; height: 100%;">
+                                <div class="text-box">
+                                    <p id="getInTouchText">Get in touch with us to advertise on MueTube<br></p>
+                                </div>
+                            </div>
+                            <div style="width:30vw; height: 100%;">
+                                <button id="enquireButton" type="button">Enquire</button>
+                            </div> 
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+            </div>
+        </div>
+        <div style="width:0vw; height: 100%;">
+        </div>
+
+      </div>
+
+
+      <div class="ad-indicator">
+        <p id="adIndicatorText">Ad</p>
+      </div>
+
+
+</body>
+</html>
