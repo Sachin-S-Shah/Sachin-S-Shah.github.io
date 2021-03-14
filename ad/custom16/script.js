@@ -3,7 +3,7 @@ function resumeAd(){}
 
 
 var randomIntegerVal = 1//randomInteger(1, 10);
-if(userCurrentAppVersion=='4.2.3' && randomIntegerVal % 2 === 0){
+if(userCurrentAppVersion=='4.2.4' && randomIntegerVal % 2 === 0){
     window.location.href = "https://sachin-s-shah.github.io/ad/custom14/index.html";
 }
 else{
@@ -35,7 +35,7 @@ function randomInteger(min, max) {
 
 function openAdUrl(){
     
-        if(userCurrentAppVersion=='4.2.3'){
+        if(userCurrentAppVersion=='4.2.4'){
             javascript: AndroidAd.shareLink('https://play.google.com/store/apps/details?id=in.a5ach.muetubepre');
         }
         else{
@@ -69,7 +69,7 @@ function popupateMessages(){
 
     var all;
     
-    if(userCurrentAppVersion=='4.2.3'){
+    if(userCurrentAppVersion=='4.2.4'){
         all = [
 
             ["احب الموسيقى؟ شارك التطبيق مع الآخرين",
