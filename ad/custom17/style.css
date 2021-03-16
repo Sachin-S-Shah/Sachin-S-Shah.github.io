@@ -1,0 +1,123 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+	display: table;
+}
+
+p {
+	margin: 0;
+	width: -webkit-fill-available;
+	font-family: 'Thasadith', sans-serif;
+	font-size: 13px;
+	color: black;
+	font-weight: bold;
+	
+    margin-block-start: 0;
+	margin-block-end: 0;
+	
+	margin-left: 10px;
+	margin-right: 10px;
+
+	text-wrap: balance;
+}
+
+.carousel-caption {
+    padding-top: 0;
+	padding-bottom: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+		
+    display: flex;
+	align-items: center;
+
+	text-shadow: 1px 1px 3px white;
+}
+.thumbnail {
+    display: table-cell; 
+    text-align: center;
+	vertical-align: middle;
+	
+	background-color: transparent;
+    margin-bottom: 0;
+	border: none;
+	padding: 0;
+
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	padding-right: 75vh;
+
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.item {
+	text-align: center;
+	height: 52px;
+	width: 100%;
+}
+
+#muetube_icon {
+	height: 100%;
+	min-height: 100%;
+	max-height: 100%;
+	position: absolute;
+	right: 0;
+	z-index: 3;
+}
+
+
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.updatebutton {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+	font-size: 1rem;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+	background-color: rgb(59, 182, 96);
+	
+	position: absolute;
+	right: 0;
+	z-index: 3;
+	transform: translateY(50%);
+	margin-right: 10px;
+	display: none;
+}
