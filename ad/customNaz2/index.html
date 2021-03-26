@@ -230,7 +230,7 @@
         
 
 
-        try {javascript: AndroidAd.hideShimmerShowCustomAd();} catch (e) {}
+        
 
 
         function handleOnClickById(idOfElement) {
@@ -270,6 +270,13 @@
                 javascript: AndroidAd.openURLInExternalBrowser("https://songwhip.com/nazandella/no-doesnt-mean-convince-me"); 
             }
         }
+
+        
+        setTimeout(function () {
+            try {javascript: AndroidAd.hideShimmerShowCustomAd();} catch (e) {}
+        }, 1000);
+
+        
 
         setTimeout(function () {
             try {  javascript: AndroidAd.loadNormalAd(); } catch (e) {}
