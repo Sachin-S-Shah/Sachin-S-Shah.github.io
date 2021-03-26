@@ -88,6 +88,24 @@
 
             background-repeat: no-repeat; background-size: auto; background-position: center;
         }
+
+
+        .ad-indicator{
+            position: absolute;
+            font-family: 'Thasadith', sans-serif;
+            font-size: 8px;
+            color: black;
+            font-weight: bold;
+            right: 0;
+            bottom: 0;
+            background: #e4e4e48e;
+            padding: 2px;
+            z-index:10;
+
+        }
+        #adIndicatorText {
+            margin: unset;
+        }
     </style>
 </head>
 
@@ -187,7 +205,13 @@
             </div>
         
 
+
     </div>
+
+
+
+
+
 
 
     <script src="https://unpkg.com/swiper@6.5.0/swiper-bundle.min.js"></script>
@@ -282,6 +306,10 @@
             try {  javascript: AndroidAd.loadNormalAd(); } catch (e) {}
         }, 90000);
     </script>
+
+<div class="ad-indicator">
+    <p id="adIndicatorText">Ad</p>
+  </div>
 </body>
 
 </html>
