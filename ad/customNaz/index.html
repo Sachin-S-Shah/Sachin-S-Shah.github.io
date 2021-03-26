@@ -60,7 +60,7 @@
             margin: 0;
             width: -webkit-fill-available;
             font-family: 'Josefin Sans', sans-serif;
-            font-size: 20px;
+            font-size: 16px;
             color: white;
             font-weight: bold;
             
@@ -240,37 +240,40 @@
                 javascript: AndroidAd.openURLInExternalBrowser("https://www.nazandella.com/"); 
             }
             else if(idOfElement=='youtube'){
-                javascript: AndroidAd.openAppLink("https://www.youtube.com/playlist?playnext=1&list=PL01F5hD0lOAIug0WWqL16zSfU9yReacM0&feature=gws_kp_artist", "com.google.android.youtube"); 
+                javascript: AndroidAd.openAppDeepLink("https://www.youtube.com/playlist?playnext=1&list=PL01F5hD0lOAIug0WWqL16zSfU9yReacM0&feature=gws_kp_artist", "com.google.android.youtube"); 
             }
             else if(idOfElement=='bandcamp'){
-                javascript: AndroidAd.openAppLink("https://nazandella.bandcamp.com/releases", "com.bandcamp.android"); 
+                javascript: AndroidAd.openAppDeepLink("https://nazandella.bandcamp.com/releases", "com.bandcamp.android"); 
             }
             else if(idOfElement=='spotify'){
-                javascript: AndroidAd.openAppLink("https://open.spotify.com/artist/1s1YbCALQEKr54S36ZlbsO?autoplay=true", "com.spotify.music"); 
+                javascript: AndroidAd.openAppDeepLink("https://open.spotify.com/artist/1s1YbCALQEKr54S36ZlbsO?autoplay=true", "com.spotify.music"); 
             }
             else if(idOfElement=='soundcloud'){
-                javascript: AndroidAd.openAppLink("https://soundcloud.com/nazandella", "com.soundcloud.android"); 
+                javascript: AndroidAd.openAppDeepLink("https://soundcloud.com/nazandella", "com.soundcloud.android"); 
             }
             else if(idOfElement=='youtubemusic'){
-                javascript: AndroidAd.openAppLink("https://music.youtube.com/channel/UCtup9VLiaYXdS7VKivvD7gw?feature=gws_kp_artist&feature=gws_kp_artist", "com.google.android.apps.youtube.music"); 
+                javascript: AndroidAd.openAppDeepLink("https://music.youtube.com/channel/UCtup9VLiaYXdS7VKivvD7gw?feature=gws_kp_artist&feature=gws_kp_artist", "com.google.android.apps.youtube.music"); 
             }
             else if(idOfElement=='deezer'){
-                javascript: AndroidAd.openAppLink("https://www.deezer.com/artist/12412320/radio?autoplay=true", "deezer.android.app"); 
+                javascript: AndroidAd.openAppDeepLink("https://www.deezer.com/artist/12412320/radio?autoplay=true", "deezer.android.app"); 
             }
             else if(idOfElement=='facebook'){
-                javascript: AndroidAd.openAppLink("https://www.facebook.com/NazandEllaMusic", "com.facebook.katana"); 
+                javascript: AndroidAd.openAppDeepLink("https://www.facebook.com/NazandEllaMusic", "com.facebook.katana"); 
             }
             else if(idOfElement=='instagram'){
-                javascript: AndroidAd.openAppLink("https://www.instagram.com/nazandella/", "com.instagram.android"); 
+                javascript: AndroidAd.openAppDeepLink("https://www.instagram.com/nazandella/", "com.instagram.android"); 
             }
             else if(idOfElement=='twitter'){
-                javascript: AndroidAd.openAppLink("https://twitter.com/NazandEllaMusic", "com.twitter.android"); 
+                javascript: AndroidAd.openAppDeepLink("https://twitter.com/NazandEllaMusic", "com.twitter.android"); 
             }
             else if(idOfElement=='latestrelease'){
                 javascript: AndroidAd.openURLInExternalBrowser("https://songwhip.com/nazandella/no-doesnt-mean-convince-me"); 
             }
         }
 
+        setTimeout(function () {
+            try {  javascript: AndroidAd.loadNormalAd(); } catch (e) {}
+        }, 90000);
     </script>
 </body>
 
