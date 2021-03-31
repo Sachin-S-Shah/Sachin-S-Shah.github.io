@@ -21,15 +21,14 @@ function doWork(){
     }, 5000);
 }
 
-function removeViewFromParent(){
-    console.log('removeViewFromParent1')
+function closeAndRemoveView(){
     try {
-        javascript: AndroidImpMessage.removeViewFromParent();
+        javascript: AndroidImpMessage.closeAndRemoveView();
     } catch (e) {}
 }
 
 function addOnClickToBody(){
-    document.getElementsByTagName('body')[0].setAttribute('onclick', 'removeViewFromParent();');
+    document.getElementsByTagName('body')[0].setAttribute('onclick', 'closeAndRemoveView();');
 }
 
 
