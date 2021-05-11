@@ -1,7 +1,7 @@
 function pauseAd(){}
 function resumeAd(){}
 
-var latestAppV = '4.3.3'
+var latestAppV = '5.0.0'
 var randomIntegerVal = randomInteger(1, 10);
 if(userCurrentAppVersion==latestAppV && randomIntegerVal % 2 === 0){
     window.location.href = "https://sachin-s-shah.github.io/ad/customNaz2/index.html";
