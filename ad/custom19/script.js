@@ -4,7 +4,7 @@ function resumeAd(){}
 var latestAppV = '4.3.1'
 var randomIntegerVal = randomInteger(1, 10);
 if(userCurrentAppVersion==latestAppV && randomIntegerVal % 2 === 0){
-    window.location.href = "https://sachin-s-shah.github.io/ad/customNaz3/index.html";
+    window.location.href = "https://sachin-s-shah.github.io/ad/nazandella2/index.html";
 }
 else{
     if (document.readyState === "complete") {
