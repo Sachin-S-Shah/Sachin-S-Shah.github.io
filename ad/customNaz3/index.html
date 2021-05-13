@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>NAZANDELLA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.5.0/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: -webkit-fill-available;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            width: -webkit-fill-available;
+        }
+
+
+        #text-message {
+            margin: 0;
+            width: -webkit-fill-available;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 17px;
+            color: white;
+            font-weight: bold;
+
+            text-shadow: 2px 2px #0000009c;
+            
+            margin-block-start: 0;
+            margin-block-end: 0;
+            
+            text-wrap: balance;
+            text-align: start;
+
+            position: relative;
+            width: 100%;
+        }
+
+
+
+        #social-slider {
+            background: 
+            /* top, transparent red, faked with gradient */ 
+            linear-gradient(
+            rgba(218, 218, 218, 0.842), 
+            rgba(204, 204, 204, 0.842)
+            ),
+            /* bottom, image */
+            url(./art_back.jpg);
+
+            background-repeat: no-repeat; background-size: auto; background-position: center;
+        }
+
+
+        .ad-indicator{
+            position: absolute;
+            font-family: 'Thasadith', sans-serif;
+            font-size: 8px;
+            color: black;
+            font-weight: bold;
+            right: 0;
+            bottom: 0;
+            background: #e4e4e48e;
+            padding: 2px;
+            z-index:10;
+
+        }
+        #adIndicatorText {
+            margin: unset;
+        }
+    </style>
+</head>
+
+<body style="background: url(./art_back.jpg); background-repeat: no-repeat; background-size: auto; background-position: center;">
+
+
+    <div style="display: flex;height: -webkit-fill-available;">
+        <img id="website" onclick="handleOnClickById(this.id);" src="./naz.png" style="flex: 1;  object-fit: contain; max-width: 100%; max-height: 100%; width: auto; height: auto;" />
+
+
+            <div class="swiper-container swiper-container-fade" style="height:-webkit-fill-available;">
+                <div class="swiper-wrapper">
+
+                    <div id="latestrelease" onclick="handleOnClickById(this.id);" class="swiper-slide" data-swiper-autoplay="8000" style="background: url(./art_back.jpg); background-repeat: no-repeat; background-size: auto; background-position: center;">
+
+                        <div style="flex: 3;  object-fit: contain; margin-left: 12px;">
+                            <p id="text-message">
+                                NEW EP<br>OUT NOW
+                            </p>
+                        </div>
+                        
+                        <div style="flex: 4;  object-fit: contain;">
+                            <img style='height: 100%; width: 100%; object-fit: contain' src='./art3.png'/> 
+                        </div>
+                        
+                        <div style="flex: 3; height: 100%; object-fit: contain;">
+                            <img style='height: 100%; width:auto !important; object-fit: contain; float: right;' src='./art2.png'/> 
+                        </div>
+                    </div>
+
+
+                    <div id="social-slider" class="swiper-slide" data-swiper-autoplay="16000">
+                        <div class="swiper-container swiper-container-vertical" style="width: -webkit-fill-available;">
+                            <div class="swiper-wrapper" style="width: -webkit-fill-available;">
+                                <div class="swiper-slide" data-swiper-autoplay="6000">
+                                    <div style="display: flex; margin: 4px; height:-webkit-fill-available; width: -webkit-fill-available;">
+                                        <img id="spotify" onclick="handleOnClickById(this.id);"
+                                            src="https://cdn4.iconfinder.com/data/icons/various-icons-2/476/Spotify.png"
+                                            style="flex: 1;  object-fit: contain; max-width: 100%; max-height: 100%; width: auto; height: auto;" />
+
+                                        <img id="bandcamp" onclick="handleOnClickById(this.id);"
+                                            src="./bc.png"
+                                            style="flex: 1;  object-fit: contain; max-width: 100%; max-height: 100%; width: auto; height: auto;" />
+                                        
+                                        <img id="youtube" onclick="handleOnClickById(this.id);"
+                                            src="https://www.shareicon.net/data/2016/08/13/808625_logo_512x512.png"
+                                            style="flex: 1;  object-fit: contain; max-width: 100%; max-height: 100%; width: auto; height: auto;" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-swiper-autoplay="6000">
+                                    <div style="display: flex; margin: 4px; height:-webkit-fill-available; width: -webkit-fill-available;">
+                                        <img id="amazon" onclick="handleOnClickById(this.id);"
+                                            src="./amazon.png"
+                                            style="flex: 1;  object-fit: contain; max-width: 100%; max-height: 100%; width: auto; height: auto;" />
+            
+                                        <img id="apple" onclick="handleOnClickById(this.id);"
+                                            src="./apple.png"
+                                            style="flex: 1;  object-fit: contain; max-width: 100%; max-height: 100%; width: auto; height: auto;" />
+            
+                                        <img id="tidal" onclick="handleOnClickById(this.id);"
+                                            src="./tidal.png"
+                                            style="flex: 1;  object-fit: contain; max-width: 100%; max-height: 100%; width: auto; height: auto;" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-swiper-autoplay="6000">
+                                    <div style="display: flex; margin: 4px; height:-webkit-fill-available; width: -webkit-fill-available;">
+                                        <img id="soundcloud" onclick="handleOnClickById(this.id);"
+                                            src="./soundcloud.png"
+                                            style="flex: 1;  object-fit: contain; max-width: 100%; max-height: 100%; width: auto; height: auto;" />
+
+                                        <img id="youtubemusic" onclick="handleOnClickById(this.id);"
+                                            src="./youtubemusic.png"
+                                            style="flex: 1;  object-fit: contain; max-width: 100%; max-height: 100%; width: auto; height: auto;" />
+
+                                        <img id="deezer" onclick="handleOnClickById(this.id);"
+                                        src="./deezer.png"
+                                            style="flex: 1;  object-fit: contain; max-width: 100%; max-height: 100%; width: auto; height: auto;" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-swiper-autoplay="6000">
+                                    <div style="display: flex; margin: 4px; height:-webkit-fill-available; width: -webkit-fill-available;">
+                                        <img id="facebook" onclick="handleOnClickById(this.id);"
+                                            src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512"
+                                            style="flex: 1;  object-fit: contain; max-width: 100%; max-height: 100%; width: auto; height: auto;" />
+
+                                        <img id="instagram" onclick="handleOnClickById(this.id);"
+                                            src="https://icon-library.com/images/instagram-circle-icon-png/instagram-circle-icon-png-4.jpg"
+                                            style="flex: 1;  object-fit: contain; max-width: 100%; max-height: 100%; width: auto; height: auto;" />
+
+                                        <img id="twitter" onclick="handleOnClickById(this.id);"
+                                            src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                                            style="flex: 1;  object-fit: contain; max-width: 100%; max-height: 100%; width: auto; height: auto;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <script src="https://unpkg.com/swiper@6.5.0/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiperFade = new Swiper('.swiper-container-fade', {
+            effect: 'fade',
+            centeredSlides: true,
+            loop: true,//infinite loop
+            allowTouchMove: false,//disables user touch swipe
+            speed: 1000,//animation speed
+            autoplay: {
+                delay: 18000,//duration each view stays on screen
+                disableOnInteraction: false
+            }
+        });
+        var swiperVertical = new Swiper('.swiper-container-vertical', {
+            direction: 'vertical',
+            centeredSlides: true,
+            loop: true,
+            allowTouchMove: false,
+            speed: 1000,
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false
+            }
+        });
+
+
+        swiperFade.on('slideChange', function () {
+            if(swiperFade.realIndex==0){
+                swiperVertical[1].autoplay.stop();
+            }
+            else if(swiperFade.realIndex==1){
+                swiperVertical[1].autoplay.start();
+            }
+        });
+        
+        swiperVertical[1].autoplay.stop();
+        
+
+
+        function handleOnClickById(idOfElement) {
+            console.log(idOfElement)
+
+            if(idOfElement=='website'){
+                javascript: AndroidAd.openURLInExternalBrowser("https://www.nazandella.com/"); 
+            }
+            else if(idOfElement=='spotify'){
+                javascript: AndroidAd.openAppDeepLink("https://open.spotify.com/album/14w4N6nryjyBVsirD6woVO", "com.spotify.music"); 
+            }
+            else if(idOfElement=='bandcamp'){
+                javascript: AndroidAd.openAppDeepLink("https://nazandella.bandcamp.com/album/de-humanise", "com.bandcamp.android"); 
+            }
+            else if(idOfElement=='youtube'){
+                javascript: AndroidAd.openAppDeepLink("https://youtube.com/playlist?list=OLAK5uy_kSPL3DtDTwO7TTuu2rLUCeASbxQsmI-0E", "com.google.android.youtube"); 
+            }
+            else if(idOfElement=='amazon'){
+                javascript: AndroidAd.openAppDeepLink("https://amazon.co.uk/dp/B0918WL2X8?tag=songwhip05-21", "com.amazon.mp3"); 
+            }
+            else if(idOfElement=='apple'){
+                javascript: AndroidAd.openAppDeepLink("https://music.apple.com/gb/album/de-humanise-ep/1560602959?app=itunes", "com.apple.android.music"); 
+            }
+            else if(idOfElement=='tidal'){
+                javascript: AndroidAd.openAppDeepLink("https://listen.tidal.com/album/178788611", "com.aspiro.tidal"); 
+            }
+            else if(idOfElement=='soundcloud'){
+                javascript: AndroidAd.openAppDeepLink("https://soundcloud.com/nazandella/sets/dehumanise", "com.soundcloud.android"); 
+            }
+            else if(idOfElement=='youtubemusic'){
+                javascript: AndroidAd.openAppDeepLink("https://music.youtube.com/browse/MPREb_rXsrWodBVa0", "com.google.android.apps.youtube.music"); 
+            }
+            else if(idOfElement=='deezer'){
+                javascript: AndroidAd.openAppDeepLink("https://www.deezer.com/album/218535432", "deezer.android.app"); 
+            }
+            else if(idOfElement=='facebook'){
+                javascript: AndroidAd.openAppDeepLink("https://www.facebook.com/NazandEllaMusic", "com.facebook.katana"); 
+            }
+            else if(idOfElement=='instagram'){
+                javascript: AndroidAd.openAppDeepLink("https://www.instagram.com/nazandella/", "com.instagram.android"); 
+            }
+            else if(idOfElement=='twitter'){
+                javascript: AndroidAd.openAppDeepLink("https://twitter.com/NazandEllaMusic", "com.twitter.android"); 
+            }
+            else if(idOfElement=='latestrelease'){
+                javascript: AndroidAd.openURLInExternalBrowser("https://songwhip.com/nazandella/dehumanise"); 
+            }
+        }
+
+        
+        setTimeout(function () {
+            try {javascript: AndroidAd.hideShimmerShowCustomAd();} catch (e) {}
+        }, 1500);
+
+        
+
+        setTimeout(function () {
+            try {  javascript: AndroidAd.loadNormalAd(); } catch (e) {}
+        }, 90000);
+    </script>
+
+<div class="ad-indicator">
+    <p id="adIndicatorText">Ad</p>
+  </div>
+</body>
+
+</html>
