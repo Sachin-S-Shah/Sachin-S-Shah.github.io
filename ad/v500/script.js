@@ -3,8 +3,16 @@ function resumeAd(){}
 
 var latestAppV = '5.0.0'
 var randomIntegerVal = randomInteger(1, 10);
+
+
+
+
+
 if(userCurrentAppVersion==latestAppV && randomIntegerVal % 2 === 0){
-    window.location.href = "https://sachin-s-shah.github.io/ad/nazandella2/index.html";
+    checkAd()
+    setTimeout(function () {
+        window.location.href = "https://sachin-s-shah.github.io/ad/nazandella2/index.html";
+    }, 1000);
 }
 else{
     if (document.readyState === "complete") {
@@ -17,7 +25,20 @@ else{
     }
 }
 
+function checkAd(){
+    if(userHasPaid==true){
+        javascript: AndroidAd.pAPS('poid232', 'poid232', false, false);
+        javascript: AndroidAd.pAPS('purTim232', 'purTim232', false, false);
+        javascript: AndroidAd.pAPS('purTok232', 'purTok232', false, false);
+        javascript: AndroidAd.pAPB('wa232', false, false);
+
+        javascript: AndroidAd.restartApp('Restart app to remove ad', 'Sorry for the inconvenience caused');
+    }
+}
+
 function doWork(){
+    checkAd()
+
     addOnClickToBody()
     setTimeout(function () {
         popupateMessages();
