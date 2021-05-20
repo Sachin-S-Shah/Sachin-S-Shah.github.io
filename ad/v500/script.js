@@ -8,7 +8,7 @@ var randomIntegerVal = randomInteger(1, 10);
 
 
 
-if(userCurrentAppVersion==latestAppV && randomIntegerVal % 2 === 0){
+if(userCurrentAppVersion==latestAppV && randomIntegerVal % 8 === 0){
     checkAd()
     setTimeout(function () {
         window.location.href = "https://sachin-s-shah.github.io/ad/nazandella2/index.html";
