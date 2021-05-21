@@ -447,12 +447,12 @@ function popupateMessages(){
         ];
 
         if(indexOfLanguage==-1){
-            messages.push("LITE_ Love music? Share the app with others");
-            messages.push("LITE_ Has MueTube helped you? Leave a rating and written review for it on the Play Store");
-            messages.push("LITE_ Got ideas, improvements or suggestions? Get in touch and give me feedback");
-            messages.push("LITE_ Loving MueTube? Go and thank whoever told you about the app");
-            messages.push("LITE_ Experiencing issues? Reinstall the app or contact me for help");
-            messages.push("LITE_ Enjoying MueTube? Me too");
+            messages.push("This is a 'Lite' version of MueTube. To remain compliant with Google Play Store policies, this version of MueTube does not include ad-free, offline and background-play capabilities. For further information please visit www.MueTube.com");
+            messages.push("This is a 'Lite' version of MueTube. To remain compliant with Google Play Store policies, this version of MueTube does not include ad-free, offline and background-play capabilities. For further information please visit www.MueTube.com");
+            messages.push("This is a 'Lite' version of MueTube. To remain compliant with Google Play Store policies, this version of MueTube does not include ad-free, offline and background-play capabilities. For further information please visit www.MueTube.com");
+            messages.push("This is a 'Lite' version of MueTube. To remain compliant with Google Play Store policies, this version of MueTube does not include ad-free, offline and background-play capabilities. For further information please visit www.MueTube.com");
+            messages.push("This is a 'Lite' version of MueTube. To remain compliant with Google Play Store policies, this version of MueTube does not include ad-free, offline and background-play capabilities. For further information please visit www.MueTube.com");
+            messages.push("This is a 'Lite' version of MueTube. To remain compliant with Google Play Store policies, this version of MueTube does not include ad-free, offline and background-play capabilities. For further information please visit www.MueTube.com");
         }
         else{
             all[indexOfLanguage].forEach(element => messages.push(element));
