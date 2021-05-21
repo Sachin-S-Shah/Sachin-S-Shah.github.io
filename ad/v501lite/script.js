@@ -424,7 +424,7 @@ function popupateMessages(){
 
     if(indexOfLanguage==-1){
         messages.push("This is a 'Lite' version of MueTube");
-        messages.push("To remain compliant with Google Play Store policies, this 'Lite' version of MueTube does not include ad-free, offline and background-play capabilities");
+        messages.push("To remain compliant with Play Store policies, this app does not include ad-free, offline or background-play capabilities");
         messages.push("For further information please visit www.MueTube.com");
     }
     else{
