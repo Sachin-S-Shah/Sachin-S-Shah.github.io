@@ -423,7 +423,8 @@ function popupateMessages(){
     ];
 
     if(indexOfLanguage==-1){
-        messages.push("This is a 'Lite' version of MueTube. To remain compliant with Google Play Store policies, this version of MueTube does not include ad-free, offline and background-play capabilities");
+        messages.push("This is a 'Lite' version of MueTube");
+        messages.push("To remain compliant with Google Play Store policies, this 'Lite' version of MueTube does not include ad-free, offline and background-play capabilities");
         messages.push("For further information please visit www.MueTube.com");
     }
     else{
