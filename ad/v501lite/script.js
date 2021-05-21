@@ -1,9 +1,6 @@
 function pauseAd(){}
 function resumeAd(){}
 
-var latestAppV = '5.0.1'
-
-
 if (document.readyState === "complete") {
     doWork();
 }
@@ -15,34 +12,19 @@ else{
 
 
 function doWork(){
-
     addOnClickToBody()
     setTimeout(function () {
         popupateMessages();
     }, 1000);
-    setTimeout(function () {
-        try {
-            javascript: AndroidAd.loadNormalAd();
-        } catch (e) {}
-    }, 36000);
 }
 
 function openAdUrl(){
-    
-        if(userCurrentAppVersion==latestAppV){
-            javascript: AndroidAd.shareLink('https://play.google.com/store/apps/details?id=in.a5ach.muetubepre');
-        }
-        else{
-            javascript: AndroidAd.openLinkInBrowser('https://www.MueTube.com/');
-        }
-    
+    javascript: AndroidAd.openLinkInBrowser('https://www.MueTube.com/');
 }
 
 function addOnClickToBody(){
     document.getElementsByTagName('body')[0].setAttribute('onclick', 'openAdUrl();');
 }
-
-
 
 var userCurrentAppVersion = "";
 var userIso3countryCode = "";
@@ -51,9 +33,6 @@ var userAppOpenedCount = 0;
 
 
 function popupateMessages(){
-
-  
-
 
     var messages = [];
 
@@ -447,302 +426,14 @@ function popupateMessages(){
         ];
 
         if(indexOfLanguage==-1){
-            messages.push("This is a 'Lite' version of MueTube. To remain compliant with Google Play Store policies, this version of MueTube does not include ad-free, offline and background-play capabilities. For further information please visit www.MueTube.com");
-            messages.push("This is a 'Lite' version of MueTube. To remain compliant with Google Play Store policies, this version of MueTube does not include ad-free, offline and background-play capabilities. For further information please visit www.MueTube.com");
-            messages.push("This is a 'Lite' version of MueTube. To remain compliant with Google Play Store policies, this version of MueTube does not include ad-free, offline and background-play capabilities. For further information please visit www.MueTube.com");
-            messages.push("This is a 'Lite' version of MueTube. To remain compliant with Google Play Store policies, this version of MueTube does not include ad-free, offline and background-play capabilities. For further information please visit www.MueTube.com");
-            messages.push("This is a 'Lite' version of MueTube. To remain compliant with Google Play Store policies, this version of MueTube does not include ad-free, offline and background-play capabilities. For further information please visit www.MueTube.com");
-            messages.push("This is a 'Lite' version of MueTube. To remain compliant with Google Play Store policies, this version of MueTube does not include ad-free, offline and background-play capabilities. For further information please visit www.MueTube.com");
+            messages.push("This is a 'Lite' version of MueTube. To remain compliant with Google Play Store policies, this version of MueTube does not include ad-free, offline and background-play capabilities");
+            messages.push("For further information please visit www.MueTube.com");
         }
         else{
             all[indexOfLanguage].forEach(element => messages.push(element));
         }
-
-        createClass('.updatebutton',"display:none");
-    }
-    else{
-
-
-        all = [
-            
-            ["هذا الإصدار من التطبيق غير مدعوم الآن وسيتوقف عن العمل قريبًا"],
-
-            ["Tətbiqin bu versiyası indi dəstəklənmir və tezliklə işini dayandıracaq"],
-
-            ["Тази версия на приложението вече не се поддържа и скоро ще спре да работи"],
-
-            ["অ্যাপ্লিকেশনটির এই সংস্করণটি এখন অসমর্থিত এবং শীঘ্রই কাজ করা বন্ধ করবে"],
-
-            ["Ova verzija aplikacije sada nije podržana i uskoro će prestati raditi"],
-
-            ["Aquesta versió de l'aplicació ara no és compatible i aviat deixarà de funcionar"],
-
-            ["Tato verze aplikace nyní není podporována a brzy přestane fungovat"],
-
-            ["Denne version af appen understøttes nu og stopper snart med at fungere"],
-
-            ["Diese Version der App wird jetzt nicht mehr unterstützt und funktioniert bald nicht mehr"],
-
-            ["Αυτή η έκδοση της εφαρμογής δεν υποστηρίζεται πλέον και σύντομα θα σταματήσει να λειτουργεί"],
-
-            ["Esta versión de la aplicación ahora no es compatible y pronto dejará de funcionar"],
-
-            ["Rakenduse seda versiooni ei toetata ja see lakkab peagi töötamast"],
-
-            ["این نسخه از برنامه اکنون پشتیبانی نمی شود و به زودی دیگر کار نمی کند"],
-
-            ["Tätä sovelluksen versiota ei nyt tueta, ja se lakkaa pian toimimasta"],
-
-            ["Ang bersyon ng app na ito ay hindi suportado ngayon at malapit nang ihinto ang paggana"],
-
-            ["Cette version de l'application n'est plus prise en charge et cessera bientôt de fonctionner"],
-
-            ["ऐप का यह संस्करण अब असमर्थित है और जल्द ही काम करना बंद कर देगा"],
-
-            ["Ova verzija aplikacije sada nije podržana i uskoro će prestati raditi"],
-
-            ["Az alkalmazás ezen verziója már nem támogatott, és hamarosan leáll"],
-
-            ["Versi aplikasi ini sekarang tidak didukung dan akan segera berhenti bekerja"],
-
-            ["Questa versione dell'app ora non è supportata e presto smetterà di funzionare"],
-
-            ["גרסה זו של האפליקציה אינה נתמכת כעת ובקרוב תפסיק לעבוד"],
-
-            ["このバージョンのアプリは現在サポートされておらず、まもなく機能しなくなります"],
-
-            ["აპის ეს ვერსია ახლა აღარ არის მხარდაჭერილი და მალე შეწყვეტს მუშაობას"],
-
-            ["កំណែកម្មវិធីនេះឥឡូវមិនត្រូវបានគាំទ្រទេហើយនឹងឈប់ដំណើរការឆាប់ៗនេះ"],
-
-            ["이 버전의 앱은 현재 지원되지 않으며 곧 작동이 중지됩니다."],
-
-            ["ແອັບ version ເວີຊັນນີ້ບໍ່ໄດ້ຮັບການສະ ໜັບ ສະ ໜູນ ແລະຈະຢຸດການເຮັດວຽກໃນໄວໆນີ້"],
-
-            ["Ši programos versija dabar nepalaikoma ir netrukus nustos veikti"],
-
-            ["Šī lietotnes versija tagad netiek atbalstīta, un drīz tā vairs nedarbosies"],
-
-            ["Оваа верзија на апликацијата сега не е поддржана и наскоро ќе престане да работи"],
-
-            ["Апп-ийн энэ хувилбарыг одоо дэмжихгүй байгаа тул удахгүй ажиллахаа болино"],
-
-            ["अ‍ॅपची ही आवृत्ती आता असमर्थित आहे आणि लवकरच कार्य करणे थांबवेल"],
-
-            ["Versi aplikasi ini kini tidak disokong dan akan segera berhenti berfungsi"],
-
-            ["ဤအက်ပလီကေးရှင်း၏ဗားရှင်းသည်ယခုအခါမထောက်ခံပါ။ မကြာမီအလုပ်လုပ်တော့မည်မဟုတ်ပါ"],
-
-            ["Denne versjonen av appen støttes nå og vil snart slutte å fungere"],
-
-            ["Deze versie van de app wordt nu niet ondersteund en werkt binnenkort niet meer"],
-
-            ["ਐਪ ਦਾ ਇਹ ਸੰਸਕਰਣ ਹੁਣ ਅਸਮਰਥਿਤ ਹੈ ਅਤੇ ਜਲਦੀ ਕੰਮ ਕਰਨਾ ਬੰਦ ਕਰ ਦੇਵੇਗਾ"],
-
-            ["Ta wersja aplikacji nie jest teraz obsługiwana i wkrótce przestanie działać"],
-
-            ["Esta versão do aplicativo agora não é compatível e logo deixará de funcionar"],
-
-            ["Această versiune a aplicației este acum neacceptată și va înceta în curând să funcționeze"],
-
-            ["Эта версия приложения сейчас не поддерживается и скоро перестанет работать."],
-
-            ["Táto verzia aplikácie teraz nie je podporovaná a čoskoro prestane fungovať"],
-
-            ["Ta različica aplikacije zdaj ni podprta in bo kmalu prenehala delovati"],
-
-            ["Ky version i aplikacionit tani nuk mbështetet dhe së shpejti do të ndalet së funksionuari"],
-
-            ["Ова верзија апликације сада није подржана и ускоро ће престати да ради"],
-
-            ["Den här versionen av appen stöds nu och slutar snart fungera"],
-
-            ["Toleo hili la programu sasa haliwezi kutumika na hivi karibuni litaacha kufanya kazi"],
-
-            ["అనువర్తనం యొక్క ఈ సంస్కరణ ఇప్పుడు మద్దతు లేదు మరియు త్వరలో పనిచేయడం ఆగిపోతుంది"],
-
-            ["ขณะนี้แอปเวอร์ชันนี้ไม่ได้รับการสนับสนุนและจะหยุดทำงานในไม่ช้า"],
-
-            ["Uygulamanın bu sürümü şu anda desteklenmiyor ve yakında çalışmayı bırakacak"],
-
-            ["Ця версія програми зараз не підтримується і незабаром перестане працювати"],
-
-            ["Ilovaning ushbu versiyasi endi qo'llab-quvvatlanmaydi va tez orada ishlashni to'xtatadi"],
-
-            ["Phiên bản ứng dụng này hiện không được hỗ trợ và sẽ sớm ngừng hoạt động"],
-
-            ["该应用程序的此版本现已不受支持，并将很快停止工作"]
-        ];
-
-
-
-
-
-
-
-        var updateText = [
-            ["تحديث"],
-
-            ["Yeniləyin"],
-
-            ["Актуализиране"],
-
-            ["হালনাগাদ"],
-
-            ["Ažuriraj"],
-
-            ["Actualització"],
-
-            ["Aktualizace"],
-
-            ["Opdatering"],
-
-            ["Aktualisieren"],
-
-            ["Εκσυγχρονίζω"],
-
-            ["Actualizar"],
-
-            ["Uuenda"],
-
-            ["به روز رسانی"],
-
-            ["Päivittää"],
-
-            ["Update"],
-
-            ["Mise à jour"],
-
-            ["अपडेट करें"],
-
-            ["Ažuriraj"],
-
-            ["Frissítés"],
-
-            ["Memperbarui"],
-
-            ["Aggiornare"],
-
-            ["עדכון"],
-
-            ["更新"],
-
-            ["განახლება"],
-
-            ["ធ្វើបច្ចុប្បន្នភាព"],
-
-            ["최신 정보"],
-
-            ["ປັບປຸງໃຫ້ທັນ"],
-
-            ["Atnaujinti"],
-
-            ["Atjaunināt"],
-
-            ["Ажурирање"],
-
-            ["Шинэчлэх"],
-
-            ["अद्यतनित करा"],
-
-            ["Kemas kini"],
-
-            ["နောက်ဆုံးသတင်း"],
-
-            ["Oppdater"],
-
-            ["Bijwerken"],
-
-            ["ਅਪਡੇਟ"],
-
-            ["Aktualizacja"],
-
-            ["Atualizar"],
-
-            ["Actualizați"],
-
-            ["Обновить"],
-
-            ["Aktualizácia"],
-
-            ["Nadgradnja"],
-
-            ["Azhurnoni"],
-
-            ["ажурирање"],
-
-            ["Uppdatering"],
-
-            ["Sasisha"],
-
-            ["నవీకరణ"],
-
-            ["อัปเดต"],
-
-            ["Güncelleme"],
-
-            ["Оновлення"],
-
-            ["Yangilash"],
-
-            ["Cập nhật"],
-
-            ["更新资料"]
-
-        ];
-
-
-
-        if(indexOfLanguage==-1){
-            document.getElementById('updatebutton').innerText = "Update"
-        }
-        else{
-            document.getElementById('updatebutton').innerText = updateText[indexOfLanguage]
-        }
-
-
-
-        
-
-
-
-        if(indexOfLanguage==-1){
-            messages.push("This version of the app is now unsupported and will soon stop working");
-        }
-        else{
-            all[indexOfLanguage].forEach(element => messages.push(element));
-        }
-
-        createClass('.muetube_icon',"display:none");
-        createClass('.updatebutton',"display:inline");
-        
-        createClass('body',"background-color: rgb(255 124 124)");
-        createClass('.thumbnail',"padding-right: 100vh");
-        
-
-        createClass('p',"font-size: 15px !important;");
-        createClass('p',"font-family: Arial, sans-serif !important;");
     }
 
-
-    function createClass(name,rules){
-        var style = document.createElement('style');
-        style.type = 'text/css';
-        document.getElementsByTagName('head')[0].appendChild(style);
-        if(!(style.sheet||{}).insertRule) 
-            (style.styleSheet || style.sheet).addRule(name, rules);
-        else
-            style.sheet.insertRule(name+"{"+rules+"}",0);
-    }
-    
-
-    
-
-
-    //var backupText = document.getElementById('backupText')
-    //backupText.innerHTML=messages[0]
-    
-    
 
     var carouselInnerList = document.getElementsByClassName('carousel-inner');
     if (carouselInnerList.length > 0) {
@@ -766,7 +457,6 @@ function popupateMessages(){
     }
 
     try {
-        console.log('asdas 5')
         javascript: AndroidAd.hideShimmerShowCustomAd();
     } catch (e) {}
 }
