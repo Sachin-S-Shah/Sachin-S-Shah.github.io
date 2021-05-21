@@ -19,7 +19,7 @@ function doWork(){
 }
 
 function openAdUrl(){
-    javascript: AndroidAd.openLinkInBrowser('https://www.MueTube.com/');
+    javascript: AndroidAd.openURLInExternalBrowser('https://www.MueTube.com/');
 }
 
 function addOnClickToBody(){
