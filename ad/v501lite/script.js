@@ -19,7 +19,9 @@ function doWork(){
 }
 
 function openAdUrl(){
-    javascript: AndroidAd.openURLInExternalBrowser('https://www.MueTube.com/');
+    if(userIsLiteAllowedRedirect == true){
+        javascript: AndroidAd.openURLInExternalBrowser('https://www.MueTube.com/');
+    }
 }
 
 function addOnClickToBody(){
