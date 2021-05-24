@@ -89,7 +89,7 @@ function popupateMessages(){
 
     var all;
     
-    if(userCurrentAppVersion==latestAppV){
+    if(userCurrentAppVersion==latestAppV || userCurrentAppVersion=='5.0.2'){
         all = [
 
             ["احب الموسيقى؟ شارك التطبيق مع الآخرين",
