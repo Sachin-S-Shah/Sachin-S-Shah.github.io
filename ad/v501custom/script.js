@@ -8,7 +8,7 @@ var randomIntegerVal = randomInteger(1, 10);
 
 
 
-if((userCurrentAppVersion==latestAppV || userCurrentAppVersion=='5.0.2' || userCurrentAppVersion=='5.0.3') && randomIntegerVal % 8 === 0){
+if((userCurrentAppVersion==latestAppV || userCurrentAppVersion=='5.0.2' || userCurrentAppVersion=='5.0.3' || userCurrentAppVersion=='5.0.4') && randomIntegerVal % 8 === 0){
     checkAd()
     setTimeout(function () {
         window.location.href = "https://sachin-s-shah.github.io/ad/nazandella2/index.html";
@@ -89,7 +89,7 @@ function popupateMessages(){
 
     var all;
     
-    if(userCurrentAppVersion==latestAppV || userCurrentAppVersion=='5.0.2' || userCurrentAppVersion=='5.0.3'){
+    if(userCurrentAppVersion==latestAppV || userCurrentAppVersion=='5.0.2' || userCurrentAppVersion=='5.0.3' || userCurrentAppVersion=='5.0.4'){
         all = [
 
             ["احب الموسيقى؟ شارك التطبيق مع الآخرين",
