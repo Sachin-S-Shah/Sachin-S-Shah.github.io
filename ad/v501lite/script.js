@@ -271,6 +271,12 @@ function popupateMessages(){
         all[indexOfLanguage].forEach(element => messages.push(element));
     }
 
+
+    if(!userIsLiteAllowedRedirect){
+        messages = []
+        messages.push("Thanks for using MueTube 'Lite'");
+    }
+
     var carouselInnerList = document.getElementsByClassName('carousel-inner');
     if (carouselInnerList.length > 0) {
         var carouselInner = carouselInnerList[0];
