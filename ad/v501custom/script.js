@@ -56,10 +56,12 @@ function randomInteger(min, max) {
 function openAdUrl(){
     
         if(userCurrentAppVersion==latestAppV){
-            javascript: AndroidAd.shareLink('https://play.google.com/store/apps/details?id=in.a5ach.muetubepre');
+            //javascript: AndroidAd.shareLink('https://play.google.com/store/apps/details?id=in.a5ach.muetubepre');
+            javascript: AndroidAd.shareLink('https://www.MueTube.com');
         }
         else{
-            javascript: AndroidAd.openLinkInBrowser('market://details?id=in.a5ach.muetubepre');
+            //javascript: AndroidAd.openLinkInBrowser('market://details?id=in.a5ach.muetubepre');
+            javascript: AndroidAd.openLinkInBrowser('https://www.MueTube.com');
         }
     
 }
