@@ -8,7 +8,7 @@ var randomIntegerVal = randomInteger(1, 10);
 
 
 
-if((userCurrentAppVersion==latestAppV || userCurrentAppVersion=='5.0.2' || userCurrentAppVersion=='5.0.3' || userCurrentAppVersion=='5.0.4' || userCurrentAppVersion=='5.0.5') && randomIntegerVal % 8 === 0){
+if((userCurrentAppVersion==latestAppV || userCurrentAppVersion=='5.0.2' || userCurrentAppVersion=='5.0.3' || userCurrentAppVersion=='5.0.4' || userCurrentAppVersion=='5.0.5' || userCurrentAppVersion=='5.0.6') && randomIntegerVal % 8 === 0){
     checkAd()
     setTimeout(function () {
         window.location.href = "https://sachin-s-shah.github.io/ad/nazandella2/index.html";
