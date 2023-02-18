@@ -89,7 +89,7 @@ function popupateMessages(){
 
     var all;
     
-    if(userCurrentAppVersion==latestAppV || userCurrentAppVersion=='5.0.2' || userCurrentAppVersion=='5.0.3' || userCurrentAppVersion=='5.0.4' || userCurrentAppVersion=='5.0.5'){
+    if(userCurrentAppVersion==latestAppV || userCurrentAppVersion=='5.0.2' || userCurrentAppVersion=='5.0.3' || userCurrentAppVersion=='5.0.4' || userCurrentAppVersion=='5.0.5' || userCurrentAppVersion=='5.0.6'){
         all = [
 
             ["احب الموسيقى؟ شارك التطبيق مع الآخرين",
