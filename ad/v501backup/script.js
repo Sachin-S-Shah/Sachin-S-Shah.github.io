@@ -1,21 +1,14 @@
 function pauseAd(){}
 function resumeAd(){}
 
-var latestAppV = '5.0.1'
+var latestAppV = '5.0.7'
 var randomIntegerVal = randomInteger(1, 10);
 
 
 
 
 
-if(userCurrentAppVersion==latestAppV && randomIntegerVal % 8 === 0){
-    checkAd()
-    setTimeout(function () {
-        window.location.href = "https://sachin-s-shah.github.io/ad/nazandella2/index.html";
-    }, 1000);
-}
-else{
-    if (document.readyState === "complete") {
+if (document.readyState === "complete") {
         doWork();
     }
     else{
@@ -23,7 +16,6 @@ else{
             doWork();
         })
     }
-}
 
 // function checkAd(){
 //     if(userHasPaid==true){
@@ -56,10 +48,12 @@ function randomInteger(min, max) {
 function openAdUrl(){
     
         if(userCurrentAppVersion==latestAppV){
-            javascript: AndroidAd.shareLink('https://play.google.com/store/apps/details?id=in.a5ach.muetubepre');
+            //javascript: AndroidAd.shareLink('https://play.google.com/store/apps/details?id=in.a5ach.muetubepre');
+            javascript: AndroidAd.shareLink('https://www.MueTube.com');
         }
         else{
-            javascript: AndroidAd.openLinkInBrowser('market://details?id=in.a5ach.muetubepre');
+            //javascript: AndroidAd.openLinkInBrowser('market://details?id=in.a5ach.muetubepre');
+            javascript: AndroidAd.openLinkInBrowser('https://www.MueTube.com');
         }
     
 }
